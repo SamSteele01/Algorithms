@@ -3,10 +3,6 @@
 //      Input = "aabcadbcb";
 //      Output = {a:3, b:3, c:2, d:1};
 
-// My first thought is to look through Lodash. That should be a refactor.
-
-// Do it with loops and ifs:
-
 function stringLetterCounter(input) {
     let inputArray = input.split("");
     let resultsObject = {};
@@ -22,6 +18,8 @@ function stringLetterCounter(input) {
     }
     return resultsObject;
 }
+
+// tests
 
 let input = "aabcadbcb";
 console.log(stringLetterCounter(input));
